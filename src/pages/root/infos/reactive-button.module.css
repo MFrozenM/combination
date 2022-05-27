@@ -1,0 +1,45 @@
+.container {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: cadetblue;*/
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    fill: #0f0f10;
+    transition: transform 300ms;
+}
+
+.shadow {
+    width: 45px;
+    height: 45px;
+    fill: #147dff;
+    position: absolute;
+    transform: translateY(-100px);
+    transition: transform 300ms;
+}
+
+@media screen and (max-width: 500px) {
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .shadow {
+        width: 35px;
+        height: 35px;
+    }
+}

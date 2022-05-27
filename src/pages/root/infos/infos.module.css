@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_text_wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    display: flex;
+    padding-top: 100px;
+    margin: auto auto auto auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_title {
+    font-size: 1.5rem;
+}
+
+.info_value {
+    width: 95%;
+    height: auto;
+    color: #0f0f10;
+    font-size: 2rem;
+    display: block;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 500px) {
+    .info_value {
+        font-size: 1.5rem;
+    }
+}
+
